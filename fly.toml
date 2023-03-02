@@ -1,4 +1,4 @@
-# fly.toml file generated for reactivities-jaytemps on 2023-02-23T16:30:20-07:00
+# fly.toml file generated for reactivities-jaytemps on 2023-02-28T14:09:33-07:00
 
 app = "reactivities-jaytemps"
 kill_signal = "SIGINT"
@@ -9,11 +9,12 @@ processes = []
   image = "jaytemps/reactivities:latest"
 
 [env]
-  ASPNETCORE_URLS="http://+:8080"
-  Cloudinary__CloudName="dkffoeaz3"
-  Cloudinary__ApiKey="859734529363852"
+  ASPNETCORE_URLS = "http://+:8080"
+  Cloudinary__ApiKey = "859734529363852"
+  Cloudinary__CloudName = "dkffoeaz3"
 
 [experimental]
+  allowed_public_ports = []
   auto_rollback = true
 
 [[services]]
